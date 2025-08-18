@@ -1,0 +1,4 @@
+            const apiKey = 'MELvQtx7BG';
+            let baseApiUrl = `https://api.ibeng.my.id/api/ai/${selectedModel}?query=${encodeURIComponent(finalPrompt)}&apikey=${apiKey}`;           
+            const promise1 = fetch(baseApiUrl).then(res => res.ok ? res.json() : Promise.reject(res.json()));
+            const promise2 = fetch(baseApiUrl).then(res => res.ok ? res.json() : Promise.reject(res.json()));
